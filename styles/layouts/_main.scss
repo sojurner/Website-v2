@@ -1,0 +1,11 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+$root-page-palette: map-get($root-background, $header)
+  map-get($root-background, $main) map-get($root-background, $footer);
+
+.root {
+  overflow: hidden;
+  @include create-grid($root-area-template, $root-column-template, $default);
+  @include apply-placement($root-page-palette, $root-placements, $default);
+}

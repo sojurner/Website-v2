@@ -1,0 +1,40 @@
+@import './variables';
+
+@mixin grid {
+  display: grid;
+}
+
+@mixin create-grid($area-template, $column-template, $break-point) {
+  grid-template-columns: map-get($column-template, $break-point);
+  grid-template-areas: map-get($area-template, $break-point);
+}
+
+@mixin respond-to($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+  @debug $raw-query;
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == 'string',
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+
+    @media only screen and #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. '
+         + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+@mixin apply-placement($palette, $placements, $breakpoint) {
+  @each $placement in $placements {
+    $color: nth($palette, index($placements, $placement));
+    $position: unquote($placement);
+    &__#{$placement} {
+      grid-area: $position;
+      background-color: $color;
+    }
+  }
+}

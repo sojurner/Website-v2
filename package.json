@@ -1,0 +1,25 @@
+{
+  "name": "personal-website-v2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  },
+  "dependencies": {
+    "@mdi/js": "^3.9.97",
+    "@mdi/react": "^1.2.1",
+    "@zeit/next-sass": "^1.0.1",
+    "next": "^9.0.3",
+    "nextjs-morph-page": "^2.0.3",
+    "node-sass": "^4.12.0",
+    "normalize.css": "^8.0.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "url-loader": "^2.1.0"
+  }
+}

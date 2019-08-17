@@ -1,0 +1,62 @@
+// ---------------- Globals ----------------- //
+
+// ----- Colors ------- //
+$base-font: rgb(44, 44, 44);
+$base-icon: rgb(71, 69, 69);
+
+// ----- Responsiveness ----- //
+$small: 'small';
+$sm-md: 'small-medium';
+$medium: 'medium';
+$large: 'large';
+$default: 'default';
+
+$breakpoints: (
+  #{$small}: (
+      max-width: 500px
+    ),
+  #{$sm-md}: (
+      max-width: 650px
+    ),
+  #{$medium}: (
+      max-width: 800px
+    ),
+  #{$large}: (
+      max-width: 1000px
+    ),
+  #{$default}: (
+      max-width: 1200px
+    )
+);
+// ----- Responsiveness ----- //
+
+// ----- fonts ----- //
+@font-face {
+  font-family: grotesque;
+  src: url('../../assets/fonts/DarkerGrotesque-Regular.ttf');
+}
+
+//---------- Main Page ----------------//
+
+$header: 'header';
+$main: 'main';
+$footer: 'footer';
+
+$root-placements: $header, $main, $footer;
+
+$root-background: (
+  'header': #f7f7f7,
+  'main': rgba(0, 0, 0, 0.03),
+  'footer': #00000004
+);
+
+$root-area-template: (
+  #{$default}: '#{$header} #{$header} #{$header} #{$header}''...... #{$main} #{$main}  ......''...... #{$main} #{$main}  ......''...... #{$main} #{$main}  ......''...... #{$main} #{$main}  ......''...... #{$main} #{$main}  ......''#{$footer} #{$footer} #{$footer} #{$footer}'
+);
+
+$root-column-template: (
+  #{$medium}: 1.5em 1fr 1.5em,
+  #{$default}: minmax(10em, 2fr) minmax(300px, 400px) minmax(300px, 400px) minmax(10em, 2fr)
+);
+
+//---------- Main Page ----------------//
