@@ -17,6 +17,7 @@ const SkillSet = ({ skills, ...props }) => {
           flex-flow: row wrap;
           margin-top: 10px;
           border-radius: 10px;
+          width: max-content;
         }
 
         .main__skillset-container {
@@ -28,7 +29,7 @@ const SkillSet = ({ skills, ...props }) => {
         }
 
         .about__skillset {
-          max-width: 233px;
+          max-width: 260px;
           display: flex;
           flex-flow: row wrap;
         }

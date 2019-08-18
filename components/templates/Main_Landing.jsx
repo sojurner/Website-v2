@@ -1,15 +1,18 @@
+import { forwardRef } from 'react';
 import Typography from '../atoms/Typography';
 import Contact from '../compounds/Contact';
 import GreetingAnimation from '../molecules/GreetingAnimation';
-import BackgroundImage from '../molecules/BackgroundImage';
+import MainLandingBackground from '../molecules/MainLandingBg';
 import { TextSwap, ContactRedirect } from '../../utils/hooks';
 
 import '../../styles/components/_main.scss';
+import Icon from '../atoms/Icon';
+import ScrollTo from '../molecules/ScrollTo';
 
-const Main_Landing = props => {
+const Main_Landing = ({ scrollToRef, ...props }, ref) => {
   return (
     <>
-      <main {...props}>
+      <main ref={ref} {...props}>
         <TextSwap>
           {({ mounted }) => (
             <>
@@ -30,10 +33,21 @@ const Main_Landing = props => {
             </>
           )}
         </TextSwap>
-        <BackgroundImage />
+        <ScrollTo
+          iconName={'Down'}
+          style={{
+            color: 'white',
+            fontSize: 30,
+            textShadow: '0px 0px 10px black'
+          }}
+          onClick={() => scrollToRef(1)}
+          indicator={'Scroll Down'}
+          className={'main__landing'}
+        />
+        <MainLandingBackground />
       </main>
     </>
   );
 };
 
-export default Main_Landing;
+export default forwardRef(Main_Landing);

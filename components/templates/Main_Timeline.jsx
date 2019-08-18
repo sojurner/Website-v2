@@ -1,14 +1,16 @@
+import { forwardRef } from 'react';
 import Icon from '../atoms/Icon';
 import { experienceInfo } from '../../assets/data/personalData';
 import Carousel from 'react-swipeable-views';
 import '../../styles/components/_timeline.scss';
 import TimelineControl from '../wrappers/TimelineControl';
+import ScrollTo from '../molecules/ScrollTo';
 
 const years = [2009, 2013, 2017, 2019];
 
-const Main_Timeline = props => {
+const Main_Timeline = ({ scrollToRef, ...props }, ref) => {
   return (
-    <div className={'timeline'}>
+    <div ref={ref} {...props} className={'timeline'}>
       <TimelineControl itemCount={experienceInfo.length - 1}>
         {({
           prevSelectedItem,
@@ -44,7 +46,12 @@ const Main_Timeline = props => {
                             }
                           >
                             <h1 children={title} />
-                            <h5 children={association} />
+                            <h5>
+                              {association}{' '}
+                              <span>
+                                ( {experience.start} - {experience.end} )
+                              </span>
+                            </h5>
                           </div>
                         </div>
                         <p children={details} />
@@ -86,8 +93,18 @@ const Main_Timeline = props => {
           );
         }}
       </TimelineControl>
+      <ScrollTo
+        onClick={() => scrollToRef(0)}
+        style={{
+          color: '#142d5a',
+          fontSize: 30
+        }}
+        indicator={'Back Top'}
+        className={'main__timeline'}
+      />
+      {/* <MainTimelineBackground /> */}
     </div>
   );
 };
 
-export default Main_Timeline;
+export default forwardRef(Main_Timeline);

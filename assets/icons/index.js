@@ -1,8 +1,13 @@
 import {
+  mdiLanguageCsharp,
+  mdiDocker,
+  mdiLanguageJava,
   mdiHumanGreeting,
   mdiLinkedin,
   mdiGit,
   mdiGithubBox,
+  mdiGithubCircle,
+  mdiGitlab,
   mdiCellphone,
   mdiWeb,
   mdiHome,
@@ -15,6 +20,7 @@ import {
   mdiDownloadOutline,
   mdiBriefcaseOutline,
   mdiEmailOutline,
+  mdiLanguageGo,
   mdiReact,
   mdiLanguageCss3,
   mdiLanguageHtml5,
@@ -49,6 +55,8 @@ const iconsList = {
   Greeting: mdiHumanGreeting,
   Git: mdiGit,
   Github: mdiGithubBox,
+  Github2: mdiGithubCircle,
+  Gitlab: mdiGitlab,
   Phone: mdiCellphone,
   Web: mdiWeb,
   Home: mdiHome,
@@ -68,6 +76,9 @@ const iconsList = {
   JS: mdiLanguageJavascript,
   TS: mdiLanguageTypescript,
   MUI: mdiMaterialUi,
+  Go: mdiLanguageGo,
+  CSharp: mdiLanguageCsharp,
+  Java: mdiLanguageJava,
   Ruby: mdiRuby,
   Copyright: mdiCopyright,
   Loading: mdiLoading,
@@ -87,7 +98,8 @@ const iconsList = {
   Family: mdiAccountGroupOutline,
   Sass: mdiSass,
   Up: mdiChevronUp,
-  Down: mdiChevronDown
+  Down: mdiChevronDown,
+  Docker: mdiDocker
 };
 
 export default iconsList;
