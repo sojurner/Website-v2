@@ -26,7 +26,7 @@ import {
   mdiCopyright,
   mdiLoading,
   mdiMenu,
-  mdiBackburger,
+  mdiArrowLeft,
   mdiVisualStudioCode,
   mdiScriptTextOutline,
   mdiReddit,
@@ -38,7 +38,10 @@ import {
   mdiVectorPolygon,
   mdiFlagVariantOutline,
   mdiHatFedora,
-  mdiAccountGroupOutline
+  mdiAccountGroupOutline,
+  mdiSass,
+  mdiChevronUp,
+  mdiChevronDown
 } from '@mdi/js';
 
 const iconsList = {
@@ -69,7 +72,7 @@ const iconsList = {
   Copyright: mdiCopyright,
   Loading: mdiLoading,
   Menu: mdiMenu,
-  BackMenu: mdiBackburger,
+  Back: mdiArrowLeft,
   VSCode: mdiVisualStudioCode,
   Resume: mdiScriptTextOutline,
   Reddit: mdiReddit,
@@ -81,7 +84,10 @@ const iconsList = {
   Polygon: mdiVectorPolygon,
   Flag: mdiFlagVariantOutline,
   Hat: mdiHatFedora,
-  Family: mdiAccountGroupOutline
+  Family: mdiAccountGroupOutline,
+  Sass: mdiSass,
+  Up: mdiChevronUp,
+  Down: mdiChevronDown
 };
 
 export default iconsList;

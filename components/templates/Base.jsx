@@ -6,12 +6,8 @@ const Base = ({ headerClass, children }) => (
   <MenuToggle>
     {({ open, handleToggle }) => (
       <>
-        <Header
-          open={open}
-          handleToggle={handleToggle}
-          className={headerClass}
-        />
-        <Drawer open={open} />
+        <Header handleToggle={handleToggle} className={headerClass} />
+        <Drawer handleToggle={handleToggle} open={open} />
         {children}
       </>
     )}

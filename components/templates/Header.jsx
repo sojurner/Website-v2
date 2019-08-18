@@ -6,14 +6,14 @@ import Icon from '../atoms/Icon';
 
 const logoName = '__logoName';
 
-const Header = ({ className, handleToggle, open, ...props }) => {
+const Header = ({ className, handleToggle, ...props }) => {
   return (
     <header className={`${className}`} {...props}>
       <div className={`${className}${logoName}`}>
         <Icon
           onClick={handleToggle}
           className={`${className}${logoName}-menu `}
-          iconName={open ? 'BackMenu' : 'Menu'}
+          iconName={'Menu'}
           size={1.1}
         />
         <img
@@ -21,6 +21,7 @@ const Header = ({ className, handleToggle, open, ...props }) => {
             'https://res.cloudinary.com/paulkim/image/upload/v1552394091/images/misc/Paul-kim-logo.png'
           }
           height={25}
+          width={85}
           style={{
             filter: 'brightness(0.5) contrast(1)'
           }}

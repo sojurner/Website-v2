@@ -5,8 +5,6 @@
   list-style: none;
   padding: 0;
 
-  min-width: 160px;
-  max-width: 160px;
   &__link {
     width: 100%;
     border-left: 4px solid rgba(0, 0, 0, 0);
@@ -21,10 +19,9 @@
     }
 
     a {
-      margin: auto;
+      margin: 0 0 0 30px;
       padding: 10px 0;
-      min-width: 120px;
-      max-width: 120px;
+
       height: 100%;
       display: flex;
       align-items: center;
