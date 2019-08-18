@@ -2,35 +2,25 @@
 @import '../abstracts/variables';
 
 main {
-  height: 400px;
-  width: 600px;
-  background-image: url('https://images.unsplash.com/photo-1488923937092-5a9ccc6eff59');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: #e0ebe8;
   @include respond-to($sm-md) {
     height: 80%;
     width: 100%;
   }
 }
-.contact-personalImg {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  margin-top: 50px;
-}
-
-.contact-personalImg__img {
-  height: 250px;
-  border-radius: 30px;
-}
-
-.contact-personalImg__img-1 {
-  box-shadow: 0 0 50px rgba(198, 63, 14, 0.82), 0 0 20px rgba(95, 46, 46, 0.664);
-}
-
-.contact-personalImg__img-2 {
-  box-shadow: 0 0 50px rgba(141, 213, 255, 0.82),
-    0 0 30px rgba(40, 136, 146, 0.86);
+.main {
+  &__contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 15px;
+    z-index: 1;
+    position: fixed;
+    left: 0;
+    top: 20%;
+    height: 244px;
+  }
 }

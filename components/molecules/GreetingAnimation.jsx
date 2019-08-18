@@ -43,14 +43,15 @@ const GreetingAnimation = ({ mounted }) => {
             mounted === 3 ? 'landing-main__title-show' : 'landing-main__title'
           }
         />
-        {mounted === 3 && (
-          <Skillset
-            style={{
-              transform: 'translate3d(81px, 35px, 0px)'
-            }}
-            skills={skills}
-          />
-        )}
+        <div
+          className={
+            mounted === 3
+              ? 'landing-main__skillset-show'
+              : 'landing-main__skillset'
+          }
+        >
+          <Skillset className={'main__skillset'} skills={skills} />
+        </div>
       </div>
     </div>
   );

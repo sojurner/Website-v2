@@ -25,15 +25,15 @@ const About = () => {
                 justifyContent: 'space-around'
               }}
             >
-              <Typography variant="h1" children="Front-end Dev" />
-              <div
-                style={{
-                  width: 1,
-                  borderLeft: '.5px solid rgba(19, 19, 19, 0.28)',
-                  height: 50
-                }}
+              <img
+                src={
+                  'https://res.cloudinary.com/paulkim/image/upload/v1566057500/images/misc/Paul_Kim-profile-pic.png'
+                }
+                className={'avatar'}
               />
-              <SkillSet skills={skills} />
+
+              <div className={'divider'} />
+              <SkillSet className={'about__skillset'} skills={skills} />
             </div>
             <div className={'contact-switch'}>
               <ContactRedirect>
@@ -96,6 +96,16 @@ const About = () => {
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
+              }
+              .divider {
+                width: 1px;
+                border-left: 0.5px solid rgba(19, 19, 19, 0.2);
+                height: 50px;
+              }
+
+              .avatar {
+                height: 70px;
+                border-radius: 50%;
               }
             `}</style>
           </header>

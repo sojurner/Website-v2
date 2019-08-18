@@ -1,16 +1,19 @@
 import Footer from '../templates/Footer';
-import Main from '../templates/Main';
+import MainLanding from '../templates/Main_Landing';
+import MainTimeline from '../templates/Main_Timeline';
 import Base from '../templates/Base';
 
 const root = 'root';
 const header = 'header';
 const main = 'main';
+const timeline = 'timeline';
 const footer = 'footer';
 
 const App = () => (
   <div className={root}>
     <Base headerClass={`${root}__${header}`}>
-      <Main className={`${root}__${main}`} />
+      <MainLanding className={`${root}__${main}`} />
+      <MainTimeline className={`${root}__${timeline}`} />
       <Footer className={`${root}__${footer}`} />
     </Base>
     <style jsx>{`
