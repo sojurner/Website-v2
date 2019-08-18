@@ -101,7 +101,7 @@ export const experienceInfo = [
     details:
       'Front-end engineering Program; Emphasis on React, Redux, JavaScript, HTML and CSS',
     start: 2017,
-    end: 2017,
+    end: 2018,
     img: 'turing.png'
   },
   {
@@ -228,7 +228,7 @@ export const projects = [
   }
 ];
 
-export const skills = [
+export const skillsOnly = [
   { iconName: 'React', color: '#61dafb' },
   { iconName: 'MUI', color: '#1976d2' },
   { iconName: 'JS', color: '#F0DB4F' },
@@ -237,7 +237,21 @@ export const skills = [
   { iconName: 'Ruby', color: '#D31304' },
   { iconName: 'HTML', color: '#EA6228' },
   { iconName: 'CSS', color: '#3596D0' },
-  { iconName: 'Sass', color: '#CC6699' },
+  { iconName: 'Sass', color: '#CC6699' }
+];
+
+export const tools = [
+  { iconName: 'Github2', color: 'grey' },
+  { iconName: 'Gitlab', color: '#F56A25' },
   { iconName: 'Git', color: '#EB4D28' },
   { iconName: 'VSCode', color: '#0077C6' }
 ];
+
+export const interests = [
+  { iconName: 'Go', color: '#2BB7AA' },
+  { iconName: 'CSharp', color: '#652077' },
+  { iconName: 'Java', color: '#44799B' },
+  { iconName: 'Docker', color: '#2396EE' }
+];
+
+export const skills = [...skillsOnly, ...tools];

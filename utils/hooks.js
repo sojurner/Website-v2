@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, Children, cloneElement } from 'react';
 
 export const MenuToggle = ({ children }) => {
   const [open, setOpen] = useState(false);
@@ -60,4 +60,16 @@ export const TextSwap = ({ children }) => {
   }, []);
 
   return children({ mounted });
+};
+
+export const useMainRefs = refCount => {
+  const [refs, setRefs] = useState(
+    Array.from({ length: refCount }).map((u, i) => useRef())
+  );
+
+  const scrollToRef = index => {
+    refs[index].current.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  };
+
+  return [refs, scrollToRef];
 };

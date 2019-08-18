@@ -49,7 +49,6 @@ const Drawer = ({ open, handleToggle }) => {
               transition: 0.2s linear;
               border-right: 1px solid #ededed;
               flex: 0 0 1;
-              background: #d8e6e7;
               box-shadow: 0 0 6px 3px #00000038;
               z-index: 100;
             }
