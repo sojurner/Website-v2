@@ -20808,7 +20808,7 @@ var TextSwap = function TextSwap(_ref5) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 0:
 /*!******************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fabout&absolutePagePath=%2FUsers%2Fpawl%2FDocuments%2Ffront-end%2Fpersonal%2FPersonal-website.v2%2Fpages%2Fabout.jsx ***!
   \******************************************************************************************************************************************************************/
@@ -20831,5 +20831,5 @@ module.exports = dll_129a35c7ec57967eb265;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js","styles"]]]);
+},[[0,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=about.js.map
