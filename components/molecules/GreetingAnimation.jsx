@@ -4,7 +4,7 @@ import Skillset from '../molecules/SkillSet';
 import { skills } from '../../assets/data/personalData';
 
 const Name = () => (
-  <Typography variant="h1" children={'Paul Kim'} className="landing-header" />
+  <Typography variant="h1" children={'Paul'} className="landing-header" />
 );
 
 const GreetingAnimation = ({ mounted }) => {

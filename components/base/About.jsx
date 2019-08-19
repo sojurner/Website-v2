@@ -90,9 +90,9 @@ const About = () => {
               }
 
               .quote {
-                margin: 45px;
+                margin: 26px;
                 border-top: 1px solid #00000012;
-                padding-top: 15px;
+                padding-top: 10px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;

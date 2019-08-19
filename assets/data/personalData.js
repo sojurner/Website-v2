@@ -214,17 +214,6 @@ export const projects = [
     githubURL: 'https://github.com/sojurner/game-time-1',
     githubPages: 'https://michaelyons.github.io/game-time/',
     gif: '../../tron.gif'
-  },
-  {
-    title: '2Do-box',
-    projectType: 'JavaScript',
-    technologies: ['node', 'html', 'css'],
-    img_url:
-      'https://res.cloudinary.com/paulkim/image/upload/v1552393875/images/projects/2Do-box.png',
-    description:
-      'Save your to-dos and Rate them by importance.  also Search for specific to-dos and delete when completed',
-    githubURL: 'https://github.com/sojurner/2DoBox-Pivot',
-    githubPages: 'https://sojurner.github.io/2DoBox-Pivot/'
   }
 ];
 

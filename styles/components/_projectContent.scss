@@ -1,0 +1,40 @@
+.projects__content {
+  &__title-techstack {
+    display: flex;
+    align-items: center;
+    &_2 {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-left: 20px;
+      img {
+        height: 30px;
+        margin: 0 5px;
+      }
+    }
+    h2 {
+      font-size: 50px;
+      margin: 25px 0;
+    }
+  }
+
+  &__description-redirects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+
+    p {
+      font-size: 25px;
+      max-width: 500px;
+      color: rgb(13, 58, 109);
+    }
+
+    div {
+      border-right: 1px solid rgba(0, 0, 0, 0.082);
+      height: 100%;
+      margin: 0 10px 0 20px;
+    }
+  }
+}

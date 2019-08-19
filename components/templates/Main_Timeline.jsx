@@ -8,7 +8,7 @@ import ScrollTo from '../molecules/ScrollTo';
 
 const years = [2009, 2013, 2017, 2019];
 
-const Main_Timeline = ({ scrollToRef, ...props }, ref) => {
+const Main_Timeline = (props, ref) => {
   return (
     <div ref={ref} {...props} className={'timeline'}>
       <TimelineControl itemCount={experienceInfo.length - 1}>
@@ -93,15 +93,7 @@ const Main_Timeline = ({ scrollToRef, ...props }, ref) => {
           );
         }}
       </TimelineControl>
-      <ScrollTo
-        onClick={() => scrollToRef(0)}
-        style={{
-          color: '#142d5a',
-          fontSize: 30
-        }}
-        indicator={'Back Top'}
-        className={'main__timeline'}
-      />
+
       {/* <MainTimelineBackground /> */}
     </div>
   );

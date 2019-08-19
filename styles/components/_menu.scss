@@ -15,26 +15,26 @@
     }
 
     &-active {
-      border-left: 4px solid gray;
+      border-left: 4px solid rgb(85, 156, 123);
     }
 
     a {
       margin: 0 0 0 30px;
-      padding: 10px 0;
+      padding: 20px 0;
 
       height: 100%;
       display: flex;
       align-items: center;
       text-decoration-line: none;
-
       p {
+        color: $drawer-font;
         font-size: 20px;
         margin-left: 15px;
       }
 
       svg {
         margin-top: 2px;
-        fill: gray;
+        fill: $drawer-font;
       }
     }
   }

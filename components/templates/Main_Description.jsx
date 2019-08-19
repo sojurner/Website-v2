@@ -39,23 +39,40 @@ const MainDescription = ({ scrollToRef, ...props }, ref) => {
           </div>
         </div>
         <div className={`${props.className}__${aboutMe}__${message}`}>
-          <div />
-          <p>
-            As our world accelerates further into the breadth of technology,
-          </p>
-          <p>
-            I took this oppurtunity to be a part of an exciting future and dove
-            head first into the field software development.
-          </p>
-          <p>
-            Since the start, I've been galvanized by the altruistic and
-            awe-inspiring dev community, whom as a whole have achieved such
-            incredible feats.
-          </p>
-          <p>
-            It has thus far been a humbling experience, and one I continue to
-            expand on as I progress as a developer.
-          </p>
+          <div className={`${props.className}__${aboutMe}__${message}-intro`}>
+            <img
+              src={
+                'https://res.cloudinary.com/paulkim/image/upload/v1552393702/images/professional/army_photo.jpg'
+              }
+            />
+            <div className={`${props.className}__${aboutMe}__${message}-text`}>
+              <p>
+                As the world accelerated further into the breadth of technology,
+              </p>
+              <p>
+                I decided to seize the oppurtunity to be a part of an exciting
+                future and dove head first into the field software development.
+              </p>
+            </div>
+          </div>
+          <div className={`${props.className}__${aboutMe}__${message}-closing`}>
+            <img
+              src={
+                'https://res.cloudinary.com/paulkim/image/upload/v1552394092/images/misc/family-cropped.jpg'
+              }
+            />
+            <div className={`${props.className}__${aboutMe}__${message}-text`}>
+              <p>
+                Since the start, I've been galvanized by the altruistic and
+                awe-inspiring dev community, whom as a whole have achieved such
+                incredible feats.
+              </p>
+              <p>
+                It has thus far been a humbling experience, and one I continue
+                to expand on as I progress as a developer.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
       <ScrollTo
