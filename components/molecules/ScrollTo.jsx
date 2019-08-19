@@ -33,15 +33,25 @@ const ScrollTo = ({ indicator, iconName, color, style, ...props }) => {
           cursor: pointer;
         }
 
-        .main__timeline {
-          position: absolute;
-          bottom: -50px;
-          left: 50%;
-          z-index: 1;
+        .footer {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: max-content;
           text-align: center;
           margin: 0 0 0 -54px;
           cursor: pointer;
+          margin: auto;
+        }
+
+        .project__content {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: max-content;
+          text-align: center;
+          cursor: pointer;
+          margin: auto;
         }
       `}</style>
     </>

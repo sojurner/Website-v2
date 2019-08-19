@@ -47,7 +47,8 @@ import {
   mdiAccountGroupOutline,
   mdiSass,
   mdiChevronUp,
-  mdiChevronDown
+  mdiChevronDown,
+  mdiLaptopMac
 } from '@mdi/js';
 
 const iconsList = {
@@ -99,7 +100,8 @@ const iconsList = {
   Sass: mdiSass,
   Up: mdiChevronUp,
   Down: mdiChevronDown,
-  Docker: mdiDocker
+  Docker: mdiDocker,
+  Web: mdiLaptopMac
 };
 
 export default iconsList;

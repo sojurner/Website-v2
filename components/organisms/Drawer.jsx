@@ -30,36 +30,47 @@ const Drawer = ({ open, handleToggle }) => {
           />
           <Typography
             className={`${drawerClass}__title`}
-            variant={'h5'}
+            variant={'h1'}
             children={'Menu'}
           />
           <Menu className={menuClass} />
         </div>
+        {open && <div className={`${drawerClass}__backdrop`} />}
         <style jsx>
           {`
             .${drawerClass} {
               display: flex;
               flex-flow: column nowrap;
-              width: 12em;
-              background: #fdfdfd;
+              flex: 0 0 1;
+              background: #efefef;
               position: absolute;
-              height: -webkit-fill-available;
               top: 0;
               left: 0;
-              transition: 0.2s linear;
+              height: -webkit-fill-available;
+              width: 15em;
               border-right: 1px solid #ededed;
-              flex: 0 0 1;
               box-shadow: 0 0 6px 3px #00000038;
+              transition: 0.2s linear;
               z-index: 100;
             }
 
             .${drawerClass}-close {
-              transform: translate3d(-12em, 0, 0);
+              transform: translate3d(-16em, 0, 0);
             }
             .${drawerClass}-open {
               transform: translate3d(0, 0, 0);
             }
             .${drawerClass}__backArrow {
+            }
+
+            .${drawerClass}__backdrop {
+              height: 200vh;
+              width: 200vw;
+              position: fixed;
+              top: -10em;
+              left: 0;
+              background: rgba(0, 0, 0, 0.5);
+              z-index: 1;
             }
           `}
         </style>

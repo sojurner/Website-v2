@@ -28,12 +28,8 @@ const App = () => {
           ref={refs[1]}
           className={`${root}__${description}`}
         />
-        <MainTimeline
-          className={`${root}__${timeline}`}
-          scrollToRef={scrollToRef}
-          ref={refs[2]}
-        />
-        <Footer className={`${root}__${footer}`} />
+        <MainTimeline className={`${root}__${timeline}`} ref={refs[2]} />
+        <Footer scrollToRef={scrollToRef} className={`${root}__${footer}`} />
       </Base>
       <style jsx>{`
         .root {

@@ -1,0 +1,47 @@
+.projects__panel__projectCard {
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.438);
+  height: 300px;
+  width: 230px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s linear;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  h1 {
+    transform: translate3d(-200px, 0, 0);
+    transition: 0.2s linear;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.774);
+  }
+
+  &:hover &__techStack,
+  &:hover h1 {
+    transform: translate3d(0, 0, 0);
+  }
+
+  &__techStack {
+    transition: 0.2s linear;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    transform: translate3d(200px, 0, 0);
+    img {
+      height: 30px;
+      margin: 0 5px;
+    }
+  }
+}
