@@ -47,11 +47,12 @@ const MainDescription = ({ scrollToRef, ...props }, ref) => {
             />
             <div className={`${props.className}__${aboutMe}__${message}-text`}>
               <p>
-                As the world accelerated further into the breadth of technology,
+                As technology propels us further into the breadths of the
+                unknown,
               </p>
               <p>
-                I decided to seize the oppurtunity to be a part of an exciting
-                future and dove head first into the field software development.
+                I decided to be a part of an exciting future and dove head first
+                into the field software development.
               </p>
             </div>
           </div>
@@ -63,13 +64,17 @@ const MainDescription = ({ scrollToRef, ...props }, ref) => {
             />
             <div className={`${props.className}__${aboutMe}__${message}-text`}>
               <p>
-                Since the start, I've been galvanized by the altruistic and
-                awe-inspiring dev community, whom as a whole have achieved such
-                incredible feats.
+                Since I've began my journey, I've been awe-struck by the
+                incredible feats achieved by the dev community as a collective
+                whole.
               </p>
               <p>
-                It has thus far been a humbling experience, and one I continue
-                to expand on as I progress as a developer.
+                The breadth of knowledge as well as their altruism has inspired
+                me to strive for similar greatness.
+              </p>
+              <p>
+                It has thus far been a humbling and enlightening experience, and
+                one I continue to expand on in my progression as a developer.
               </p>
             </div>
           </div>
