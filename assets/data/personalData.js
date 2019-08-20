@@ -244,3 +244,63 @@ export const interests = [
 ];
 
 export const skills = [...skillsOnly, ...tools];
+
+const height = '10';
+const x = '100';
+
+export const skillBars = {
+  skills: {
+    JavaScript: {
+      width: '350',
+      height,
+      x,
+      y: '25'
+    },
+    React: {
+      width: '400',
+      height,
+      x,
+      y: '50'
+    },
+    TypeScript: {
+      width: '300',
+      height,
+      x,
+      y: '75',
+      tooltip: 'Vuex, VueCLI'
+    },
+    'Material-UI': {
+      width: '290',
+      height,
+      x,
+      y: '100'
+    },
+    Redux: {
+      width: '350',
+      height,
+      x,
+      y: '125',
+      tooltip: ''
+    },
+    HTML5: {
+      width: '330',
+      height,
+      x,
+      y: '150',
+      tooltip: ''
+    },
+    CSS3: {
+      width: '310',
+      height,
+      x,
+      y: '175'
+    },
+    Jest: {
+      width: '350',
+      height,
+      x,
+      y: '200'
+    }
+  },
+  tools: ['VS Code', 'Git', '', 'StoryBook', 'PostgreSQL']
+};

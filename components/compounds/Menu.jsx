@@ -45,22 +45,29 @@ const menuList = [
         props={{ style: listItemStyle }}
       />
     )
+  },
+  {
+    href: '/resume',
+    children: (
+      <LinkFactory
+        iconProps={{ iconName: 'Resume', size: 0.75 }}
+        typographyProps={{ variant: 'p', children: 'Resume' }}
+        props={{ style: listItemStyle }}
+      />
+    )
   }
 ];
 
 const Menu = ({ router, ...props }) => {
   return (
     <ul {...props}>
-      {menuList.map(itemProps => (
-        <MenuItem
-          className={
-            router.pathname === itemProps.href
-              ? `${props.className}__link ${props.className}__link-active`
-              : `${props.className}__link`
-          }
-          {...itemProps}
-        />
-      ))}
+      {menuList.map(itemProps => {
+        return router.pathname !== itemProps.href ? (
+          <MenuItem className={`${props.className}__link `} {...itemProps} />
+        ) : (
+          <li className={`${props.className}__link-active`} {...itemProps} />
+        );
+      })}
     </ul>
   );
 };

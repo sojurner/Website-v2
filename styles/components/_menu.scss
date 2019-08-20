@@ -15,6 +15,7 @@
     }
 
     &-active {
+      @extend .drawer__menu__link;
       border-left: 4px solid rgb(85, 156, 123);
     }
 
