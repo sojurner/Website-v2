@@ -17,7 +17,7 @@ const ResumeWork = ({ router }) => {
         {[
           { title: 'Event-mapper', index: 4 },
           { title: 'Movie-tracker', index: 5 },
-          { title: 'Fantasy-futbol', index: 6 }
+          { title: 'Fantasy-futbol', index: 3 }
         ].map((item, index) => {
           return (
             <span key={`work-${index}`} className="recent-work-gifs">
