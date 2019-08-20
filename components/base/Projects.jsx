@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import Footer from '../templates/Footer';
+import { withRouter } from 'next/router';
 import Base from '../templates/Base';
 import ProjectsPanel from '../compounds/ProjectsPanel';
 import '../../styles/components/_projects.scss';
@@ -12,8 +14,12 @@ const panel = 'panel';
 const content = 'content';
 const footer = 'footer';
 
-const Projects = () => {
+const Projects = ({ router }) => {
   const [refs, scrollToRef] = useMainRefs(9);
+
+  useEffect(() => {
+    if (router.query.name) scrollToRef(router.query.name);
+  }, []);
 
   return (
     <div className={root}>
@@ -35,4 +41,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default withRouter(Projects);
