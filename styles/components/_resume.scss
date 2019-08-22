@@ -3,7 +3,7 @@
   text-align: center;
   position: relative;
   opacity: 1;
-  overflow: scroll;
+  overflow-y: scroll;
   transition: 0.5s linear;
   background: #e0ebe8;
 }
@@ -237,7 +237,7 @@
 }
 
 .interests-list {
-  margin: 1rem;
+  margin: 1rem 0;
   list-style: none;
   font-weight: 800;
   letter-spacing: 1px;

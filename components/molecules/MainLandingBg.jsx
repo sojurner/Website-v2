@@ -2,7 +2,7 @@ import mountains from '../../assets/icons/flatMountains.svg';
 import cloud from '../../assets/icons/cloud.svg';
 import sun from '../../assets/icons/sun.svg';
 
-const BackgroundImage = () => (
+const MainLandingBackground = () => (
   <div className={'main__background'}>
     <img className={'main__background-mountains'} src={mountains} />
     <img className={'main__background-cloud1'} src={cloud} />
@@ -12,7 +12,6 @@ const BackgroundImage = () => (
       .main__background {
         position: absolute;
         bottom: 0;
-        top: -50px;
         z-index: 0;
         height: 100%;
         width: 100%;
@@ -42,4 +41,4 @@ const BackgroundImage = () => (
   </div>
 );
 
-export default BackgroundImage;
+export default MainLandingBackground;

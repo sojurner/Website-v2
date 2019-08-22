@@ -26,6 +26,20 @@ export default class MyApp extends App {
           <Component {...pageProps} />
         </MorphTransition>
         <style jsx global>{`
+          ::-webkit-scrollbar {
+            width: 5px;
+          }
+
+          ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px #e0ebe8;
+            border-radius: 10px;
+          }
+
+          ::-webkit-scrollbar-thumb {
+            background: gray;
+            border-radius: 20px;
+          }
+
           .morph.enter {
             opacity: 0;
           }

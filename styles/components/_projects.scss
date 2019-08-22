@@ -4,7 +4,7 @@
   overflow-y: scroll;
 
   &__panel {
-    z-index: 2;
+    z-index: 1;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

@@ -1,12 +1,15 @@
-import { useEffect } from 'react';
-import Footer from '../templates/Footer';
+import { useEffect, useRef } from 'react';
 import { withRouter } from 'next/router';
+
+import Footer from '../templates/Footer';
 import Base from '../templates/Base';
 import ProjectsPanel from '../compounds/ProjectsPanel';
-import '../../styles/components/_projects.scss';
+import ProjectsHeader from '../molecules/ProjectsHeader';
 import ProjectContent from '../compounds/ProjectContent';
+
 import { projects } from '../../assets/data/personalData';
 import { useMainRefs } from '../../utils/hooks';
+import '../../styles/components/_projects.scss';
 
 const root = 'projects';
 const header = 'header';
@@ -15,16 +18,24 @@ const content = 'content';
 const footer = 'footer';
 
 const Projects = ({ router }) => {
+  const headerRef = useRef(null);
+  const panelRef = useRef(null);
   const [refs, scrollToRef] = useMainRefs(9);
 
   useEffect(() => {
     if (router.query.name) scrollToRef(router.query.name);
   }, []);
 
+  const navigateToPanel = () => {
+    panelRef.current.scrollIntoView({ block: 'start', behavior: 'smooth' });
+  };
+
   return (
     <div className={root}>
       <Base headerClass={`${root}__${header}`}>
+        <ProjectsHeader navigateToPanel={navigateToPanel} ref={headerRef} />
         <ProjectsPanel
+          ref={panelRef}
           scrollToRef={scrollToRef}
           projects={projects}
           className={`${root}__${panel}`}

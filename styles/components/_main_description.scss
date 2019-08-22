@@ -3,6 +3,12 @@
   width: 100vw;
   background: #e0ebe8;
   position: relative;
+  background: url(https://www.abgeflogen.clothing/wp-content/uploads/2016/05/footer-bg-2.png);
+  background-size: containt;
+  background-position: bottom;
+  background-color: #dbf0ea;
+  background-blend-mode: color-burn;
+  background-repeat: no-repeat;
 
   &__aboutMe {
     margin: auto;

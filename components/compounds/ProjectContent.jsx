@@ -26,7 +26,7 @@ const ProjectContent = ({ scrollToRef, projects, ...props }, ref) => {
                 list={technologies}
               />
             </div>
-            <img src={img_url} />
+            <img className={`${props.className}__projectImg`} src={img_url} />
             <div className={`${props.className}__description-redirects`}>
               <p>{description}</p>
               <div />

@@ -24,7 +24,6 @@ const Footer = ({ scrollToRef, ...props }) => {
 
       <style jsx>{`
         footer {
-          background: #dbece7;
           position: relative;
           display: flex;
           flex-direction: column;
@@ -33,7 +32,6 @@ const Footer = ({ scrollToRef, ...props }) => {
           border-top: 1px solid rgba(0, 0, 0, 0.14);
           padding: 20px 0;
         }
-
         .footer__copyright {
           display: flex;
           justify-content: center;

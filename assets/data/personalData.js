@@ -165,7 +165,7 @@ export const projects = [
     projectType: 'React',
     technologies: ['react', 'redux', 'jest', 'router'],
     img_url:
-      'https://res.cloudinary.com/paulkim/image/upload/v1552394727/images/projects/event-mapper.png',
+      'https://res.cloudinary.com/paulkim/image/upload/v1552394727/images/projects/Event-mapper.png',
     description:
       'Find the most popular events near your area.  Search by city and/or date and add an event to your watchlist',
     githubURL: 'https://github.com/sojurner/Event-Mapper',
