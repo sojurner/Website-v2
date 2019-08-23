@@ -5,7 +5,7 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  background: #e0ebe8;
+  background: #77c8b9;
   display: grid;
   grid-template-areas:
     'content content content content content navigation'
@@ -60,12 +60,12 @@
 
           h5 {
             font-size: 30px;
-            color: rgb(153, 153, 153);
+            color: #10204d;
           }
 
           span {
             font-size: 18px;
-            color: lighten(rgb(153, 153, 153), 10%);
+            color: lighten(#10204d, 10%);
           }
         }
       }
@@ -104,12 +104,12 @@
       .timeline__navigation__listYear {
         font-size: 20px;
         cursor: pointer;
-        color: #a3a3a3;
+        color: #5e5e5e;
         margin: 50px 0;
         position: relative;
 
         &:hover {
-          color: rgb(100, 100, 100);
+          color: rgb(65, 65, 65);
         }
 
         &::before {

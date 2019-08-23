@@ -32,12 +32,12 @@ const ResumeSkillBars = ({
         </g>
         <style jsx>{`
           .lead-bar {
-            fill: #00000038 !important;
+            fill: #bbdebe48 !important;
             border-radius: 0.5rem;
           }
 
           .bar {
-            stroke: #94d6fc;
+            stroke: #96c1c3;
           }
 
           .bar:hover > .skill-bar-show {
@@ -53,12 +53,13 @@ const ResumeSkillBars = ({
             font-size: 1.3rem;
             font-weight: 100;
             transition: 0.1s linear;
+            stroke: #bbdebe48;
           }
 
           .skill-bar-show {
             margin: 10rem 0;
             color: white;
-            fill: #1e5082 !important;
+            fill: #689e97 !important;
             border-radius: 0.5rem;
           }
 

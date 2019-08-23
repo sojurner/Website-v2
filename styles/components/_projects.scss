@@ -15,6 +15,16 @@
     margin: 0 auto 40px auto;
     padding: 40px 0 100px 0;
     border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+
+    opacity: 0;
+    transition: 0.5s linear;
+    transform: translate3d(0, 0px, 0);
+  }
+
+  &__panel-visible {
+    @extend .projects__panel;
+    transform: translate3d(0, 20px, 0);
+    opacity: 1;
   }
 
   &__content {

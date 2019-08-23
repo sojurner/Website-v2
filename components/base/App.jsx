@@ -34,6 +34,7 @@ const App = () => {
       <style jsx>{`
         .root {
           height: 100vh;
+          padding: 50px 0 50px 0;
         }
       `}</style>
     </div>

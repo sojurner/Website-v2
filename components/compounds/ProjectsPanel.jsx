@@ -1,16 +1,27 @@
-import { useImperativeHandle, forwardRef, useRef } from 'react';
+import { useEffect, useImperativeHandle, forwardRef, useRef } from 'react';
 
 import Card from '../atoms/Card';
+import { TweenMax, Power3 } from 'gsap';
 import TechStacks from '../molecules/TechStacks';
 
-const ProjectsPanel = ({ projects, scrollToRef, ...props }, ref) => {
+const ProjectsPanel = (
+  { projects, panelVisible, scrollToRef, options, ...props },
+  ref
+) => {
   const panelRef = useRef(null);
 
   useImperativeHandle(ref, () => panelRef.current);
-
   return (
     <>
-      <section ref={panelRef} {...props}>
+      <section
+        ref={panelRef}
+        {...props}
+        className={
+          panelVisible
+            ? `${props.className} ${props.className}-visible`
+            : `${props.className}`
+        }
+      >
         {projects.map((project, index) => {
           const { technologies, img_url, title } = project;
           return (

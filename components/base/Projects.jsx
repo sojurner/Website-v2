@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import { withRouter } from 'next/router';
 
 import Footer from '../templates/Footer';
@@ -17,10 +17,29 @@ const panel = 'panel';
 const content = 'content';
 const footer = 'footer';
 
+const options = { rootMargin: '-200px' };
+
 const Projects = ({ router }) => {
   const headerRef = useRef(null);
   const panelRef = useRef(null);
   const [refs, scrollToRef] = useMainRefs(9);
+  const [panelVisible, setPanelVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      setPanelVisible(entry.isIntersecting);
+    }, options);
+
+    if (panelRef.current) {
+      observer.observe(panelRef.current);
+    }
+
+    return () => {
+      if (panelRef.current) {
+        observer.unobserve(panelRef.current);
+      }
+    };
+  }, [panelRef, options]);
 
   useEffect(() => {
     if (router.query.name) scrollToRef(router.query.name);
@@ -35,6 +54,7 @@ const Projects = ({ router }) => {
       <Base headerClass={`${root}__${header}`}>
         <ProjectsHeader navigateToPanel={navigateToPanel} ref={headerRef} />
         <ProjectsPanel
+          panelVisible={panelVisible}
           ref={panelRef}
           scrollToRef={scrollToRef}
           projects={projects}

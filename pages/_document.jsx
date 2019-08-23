@@ -13,7 +13,7 @@ class MyDocument extends Document {
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
           />
         </Head>
-        <body style={{ overflow: 'hidden', margin: 0 }}>
+        <body style={{ overflowX: 'hidden', margin: 0 }}>
           <Main />
           <div id="portal" />
           <NextScript />

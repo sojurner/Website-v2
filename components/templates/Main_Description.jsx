@@ -18,7 +18,7 @@ const MainDescription = ({ scrollToRef, ...props }, ref) => {
   return (
     <section ref={ref} {...props}>
       <div className={`${props.className}__${aboutMe}`}>
-        <h1>A Little Bit About Me!</h1>
+        <h1 style={{ padding: '50px 0 0 0' }}>A Little Bit About Me!</h1>
         <p>I'm a Front end Developer of 2 years currently in Denver, CO.</p>
         <div className={`${props.className}__${aboutMe}__${skillsets}`}>
           <div
@@ -47,8 +47,7 @@ const MainDescription = ({ scrollToRef, ...props }, ref) => {
             />
             <div className={`${props.className}__${aboutMe}__${message}-text`}>
               <p>
-                As technology propels us further into the breadths of the
-                unknown,
+                As technology propels us further into the depths of the unknown,
               </p>
               <p>
                 I decided to be a part of an exciting future and dove head first
@@ -65,12 +64,11 @@ const MainDescription = ({ scrollToRef, ...props }, ref) => {
             <div className={`${props.className}__${aboutMe}__${message}-text`}>
               <p>
                 Since I've began my journey, I've been awe-struck by the
-                incredible feats achieved by the dev community as a collective
-                whole.
+                incredible feats achieved by the dev community.
               </p>
               <p>
-                The breadth of knowledge as well as their altruism has inspired
-                me to strive for similar greatness.
+                Their breadth of knowledge and altruism has inspired me to
+                strive for similar greatness.
               </p>
               <p>
                 It has thus far been a humbling and enlightening experience, and

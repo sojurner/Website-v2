@@ -44,7 +44,6 @@ const ProjectContent = ({ scrollToRef, projects, ...props }, ref) => {
                       }
                     ]}
                     openTab={openTab}
-                    style={{ width: 130 }}
                     direction="row"
                   />
                 )}
