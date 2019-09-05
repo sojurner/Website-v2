@@ -19,7 +19,7 @@ const MainDescription = ({ scrollToRef, ...props }, ref) => {
     <section ref={ref} {...props}>
       <div className={`${props.className}__${aboutMe}`}>
         <h1 style={{ padding: '50px 0 0 0' }}>A Little Bit About Me!</h1>
-        <p>I'm a Front end Developer of 2 years currently in Denver, CO.</p>
+        <p>I'm a Front end Developer of 2 years located in Denver, CO.</p>
         <div className={`${props.className}__${aboutMe}__${skillsets}`}>
           <div
             className={`${props.className}__${aboutMe}__${skillsets}-current`}
@@ -47,11 +47,12 @@ const MainDescription = ({ scrollToRef, ...props }, ref) => {
             />
             <div className={`${props.className}__${aboutMe}__${message}-text`}>
               <p>
-                As technology propels us further into the depths of the unknown,
+                I started my journey into software development in 2018, after my
+                four year service in the military.
               </p>
               <p>
-                I decided to be a part of an exciting future and dove head first
-                into the field software development.
+                I wanted to be a part of an exciting, technologic future and so
+                I made a long-term commitment to programming
               </p>
             </div>
           </div>

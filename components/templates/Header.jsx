@@ -16,17 +16,6 @@ const Header = ({ className, handleToggle, ...props }) => {
           iconName={'Menu'}
           size={1.1}
         />
-        <img
-          src={
-            'https://res.cloudinary.com/paulkim/image/upload/v1552394091/images/misc/Paul-kim-logo.png'
-          }
-          height={25}
-          width={85}
-          style={{
-            filter: 'brightness(0.5) contrast(1)'
-          }}
-          alt="paul kim logo"
-        />
       </div>
     </header>
   );

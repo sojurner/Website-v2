@@ -1,12 +1,14 @@
 .about {
-  background: #e0ebe8;
-  background-size: 600% 600%;
-
+  background-image: url('../../assets/icons/denver.svg');
+  background-color: #e0ebe8;
   position: fixed;
   padding: 0px;
+  background-size: contain;
   margin: 0px;
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
 
   &::before {
     content: '';

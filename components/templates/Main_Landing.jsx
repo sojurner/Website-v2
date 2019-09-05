@@ -15,19 +15,17 @@ const Main_Landing = ({ scrollToRef, ...props }, ref) => {
           {({ mounted }) => (
             <>
               <GreetingAnimation mounted={mounted} />
-              {mounted === 3 && (
-                <div className="main__contact">
-                  <ContactRedirect>
-                    {({ openTab }) => (
-                      <Contact
-                        openTab={openTab}
-                        style={{ margin: '52px 10px', height: 'inherit' }}
-                        direction="column"
-                      />
-                    )}
-                  </ContactRedirect>
-                </div>
-              )}
+              <div className="main__contact">
+                <ContactRedirect>
+                  {({ openTab }) => (
+                    <Contact
+                      openTab={openTab}
+                      style={{ margin: '52px 10px', height: 'inherit' }}
+                      direction="column"
+                    />
+                  )}
+                </ContactRedirect>
+              </div>
             </>
           )}
         </TextSwap>

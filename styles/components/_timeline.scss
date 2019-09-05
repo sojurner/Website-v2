@@ -5,7 +5,7 @@
   height: 100vh;
   width: 100vw;
   position: relative;
-  background: #77c8b9;
+  background: linear-gradient(0deg, #c9e9e0 0%, #77c8b9 100%);
   display: grid;
   grid-template-areas:
     'content content content content content navigation'
@@ -15,7 +15,6 @@
     'content content content content content navigation';
 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 200px;
-
   font-family: grotesque;
 
   section {
@@ -93,6 +92,13 @@
       align-items: center;
       flex-flow: column nowrap;
       display: flex;
+
+      &__up {
+        cursor: pointer;
+        &:hover {
+          fill: grey;
+        }
+      }
     }
 
     ul {
@@ -130,12 +136,12 @@
             position: absolute;
             top: 9.5px;
             left: -53.5px;
-            background: #8ecaff;
+            background: #4f5f6e;
             height: 5px;
             width: 5px;
             border: 1px solid rgba(0, 0, 0, 0.2);
             border-radius: 50%;
-            box-shadow: 0 0 5px 5px #41b3be26;
+            box-shadow: 0 0 30px 10px #709093f0;
           }
         }
       }

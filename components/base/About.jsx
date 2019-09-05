@@ -4,6 +4,7 @@ import SkillSet from '../molecules/SkillSet';
 import Contact from '../compounds/Contact';
 import BucketList from '../compounds/BucketList';
 import Toggle from '../molecules/Toggle';
+import denver from '../../assets/icons/denver.svg';
 
 import { ContactRedirect, Switch } from '../../utils/hooks';
 import { bucketList, skills } from '../../assets/data/personalData';

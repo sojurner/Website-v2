@@ -18,9 +18,9 @@ main {
     justify-content: space-around;
     margin: 0 15px;
     z-index: 1;
-    position: fixed;
-    left: 0;
-    top: 20%;
+    position: absolute;
+    right: 0;
+    top: 10%;
     height: 244px;
   }
 }
