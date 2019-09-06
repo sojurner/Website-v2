@@ -20,6 +20,16 @@ const SkillSet = ({ skills, ...props }) => {
           width: max-content;
         }
 
+        .main__skillset2 {
+          background: #ffffff38;
+          display: flex;
+          flex-flow: row wrap;
+
+          border-radius: 10px;
+          width: max-content;
+          margin: 10px 0 auto auto;
+        }
+
         .main__skillset-container {
           transition: 0.2s linear;
         }

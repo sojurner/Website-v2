@@ -1,9 +1,6 @@
 .footer__contactMe {
-  border: 1px solid #008b8b29;
   padding: 0.5em 2em;
-  box-shadow: 0 0 6px 1px #0000003d;
-  background: #24e9e512;
-
+  border-left: 0.5px solid rgba(0, 0, 0, 0.096);
   h2 {
     text-align: center;
     font-size: 30px;
@@ -42,7 +39,7 @@
 
     .has-error {
       @extend .contactMe__name;
-      box-shadow: 0 0 10px 1px #b569e0 !important;
+      box-shadow: 0 0 5px 1px #e06969 !important;
     }
 
     .has-error-msg {
@@ -59,11 +56,11 @@
     textarea {
       background: rgb(179, 231, 229);
       width: 250px;
-      border: 1px solid rgb(82, 210, 219);
+      border: 0.1px solid rgb(82, 210, 219);
       padding: 10px;
       &:focus {
         outline: none;
-        box-shadow: 0 0 10px 0 rgb(50, 86, 151);
+        box-shadow: 0 0 5px 0 rgb(50, 86, 151);
       }
     }
 
