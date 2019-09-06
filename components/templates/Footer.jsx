@@ -9,13 +9,17 @@ const Footer = ({ scrollToRef, ...props }) => {
   return (
     <>
       <footer {...props}>
-        <EmailForm />
         <div className={'footer__sections'}>
           <div className={'footer__sections__logoContact'}>
-            <h2>Contact</h2>
+            <p>
+              c. <strong>(562) - 483 - 9937</strong>
+            </p>
             <ContactRedirect>
               {({ openTab }) => <Contact openTab={openTab} direction="row" />}
             </ContactRedirect>
+          </div>
+          <div>
+            <RandomQuote className={'quote'} />
           </div>
           <div>
             <Icon iconName={'Copyright'} size={1.2} color={'gray'} />
@@ -27,9 +31,7 @@ const Footer = ({ scrollToRef, ...props }) => {
               width={150}
             />
           </div>
-          <div>
-            <RandomQuote className={'quote'} />
-          </div>
+
           {/* <ScrollTo
             onClick={() => scrollToRef(0)}
             style={{
@@ -42,13 +44,14 @@ const Footer = ({ scrollToRef, ...props }) => {
             className={'footer'}
           /> */}
         </div>
+        <EmailForm />
       </footer>
 
       <style jsx>{`
         footer {
           position: relative;
           display: flex;
-          flex-direction: column;
+          flex-direction: row;
           justify-content: center;
           align-items: center;
           padding: 20px 0;
@@ -62,13 +65,12 @@ const Footer = ({ scrollToRef, ...props }) => {
         }
 
         .footer__sections {
-          height: 100px;
-          border-top: 1px solid rgba(0, 0, 0, 0.07);
-          width: 100%;
+          height: 400px;
           display: flex;
+          flex-direction: column;
           justify-content: space-around;
           align-items: center;
-          padding: 20px 0 0 0;
+          padding: 24px;
         }
         .footer__sections__logoContact {
           display: flex;

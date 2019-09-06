@@ -22,7 +22,7 @@ const validationSchema = Yup.object().shape({
 const EmailForm = () => {
   return (
     <div className={'footer__contactMe'}>
-      <h2>Contact Me</h2>
+      <h2>Send Me a Message</h2>
       <Formik
         initialValues={{ email: '', name: '', message: '' }}
         validationSchema={validationSchema}
