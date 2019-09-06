@@ -1,0 +1,100 @@
+.footer__contactMe {
+  padding: 0.5em 2em;
+  border-left: 0.5px solid rgba(0, 0, 0, 0.096);
+  h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .contactMe__form {
+    display: flex;
+    flex-direction: column;
+    div {
+      font-family: grotesque;
+      position: relative;
+      margin: 30px 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .blank {
+      position: absolute;
+    }
+
+    .error {
+      color: red;
+      position: absolute;
+      left: 100px;
+      bottom: -30px;
+      margin: 5px 0;
+    }
+
+    .verified {
+      position: absolute;
+      right: -25px;
+      color: green;
+      height: 20px;
+      width: 20px;
+    }
+
+    .has-error {
+      @extend .contactMe__name;
+      box-shadow: 0 0 5px 1px #e06969 !important;
+    }
+
+    .has-error-msg {
+      @extend .contactMe__message;
+      box-shadow: 0 0 4px 1px #ffadc8 !important;
+    }
+
+    label {
+      font-size: 20px;
+      min-width: 90px;
+    }
+
+    input,
+    textarea {
+      background: rgb(179, 231, 229);
+      width: 250px;
+      border: 0.1px solid rgb(82, 210, 219);
+      padding: 10px;
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 5px 0 rgb(50, 86, 151);
+      }
+    }
+
+    .contactMe__name,
+    .contactMe__email {
+      height: 30px;
+      font-size: 15px;
+      border-radius: 10px;
+      margin-left: 8px;
+    }
+
+    .contactMe__message {
+      height: 100px;
+      font-size: 15px;
+      border-radius: 10px;
+      margin-left: 8px;
+      line-height: 18px;
+    }
+
+    button {
+      width: max-content;
+      font-size: 15px;
+      border-radius: 10px;
+      background: #b3e7e5;
+      padding: 0.5em 1em;
+      align-self: center;
+      margin-bottom: 20px;
+      cursor: pointer;
+      border: 0.5px solid rgb(82, 210, 219);
+
+      &:disabled {
+        cursor: initial;
+        background: #9abfc5;
+      }
+    }
+  }
+}

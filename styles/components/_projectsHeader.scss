@@ -1,0 +1,20 @@
+.projects__landingHeader {
+  height: 100vh;
+  background-image: url('../../assets/icons/city.svg');
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-blend-mode: exclusion;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-h1 {
+    font-size: 4em;
+    margin: -150px 0 0 0;
+    color: rgb(23, 58, 63);
+    font-weight: 100;
+    text-align: center;
+  }
+}

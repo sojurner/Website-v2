@@ -6,7 +6,7 @@ const List = ({ listItems, openTab, direction, ...props }) => {
     <>
       <ul {...props}>
         {listItems.map(listItemProps => {
-          const { url, name, tooltip } = listItemProps;
+          const { url, mailUrl, name } = listItemProps;
           return (
             <ListItem
               className={'contact__list__icon'}
@@ -14,7 +14,7 @@ const List = ({ listItems, openTab, direction, ...props }) => {
               onClick={
                 url
                   ? () => openTab(url)
-                  : () => (window.location.href = `mailto:${url}`)
+                  : () => (window.location.href = `mailto:${mailUrl}`)
               }
             />
           );

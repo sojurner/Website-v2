@@ -4,7 +4,7 @@ import Document, { Head, Main, NextScript } from 'next/document';
 class MyDocument extends Document {
   render() {
     return (
-      <html lang="en">
+      <html style={{ background: '#e0ebe8' }} lang="en">
         <Head>
           <meta charSet="utf-8" />
           {/* Use minimum-scale=1 to enable GPU rasterization */}
@@ -13,7 +13,7 @@ class MyDocument extends Document {
             content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
           />
         </Head>
-        <body style={{ overflow: 'hidden', margin: 0 }}>
+        <body style={{ overflowX: 'hidden', margin: 0 }}>
           <Main />
           <div id="portal" />
           <NextScript />

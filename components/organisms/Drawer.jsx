@@ -43,7 +43,7 @@ const Drawer = ({ open, handleToggle }) => {
               flex-flow: column nowrap;
               flex: 0 0 1;
               background: #efefef;
-              position: absolute;
+              position: fixed;
               top: 0;
               left: 0;
               height: -webkit-fill-available;
@@ -64,13 +64,14 @@ const Drawer = ({ open, handleToggle }) => {
             }
 
             .${drawerClass}__backdrop {
-              height: 200vh;
-              width: 200vw;
+              height: 100vh;
+              width: 100vw;
+              overflow: hidden;
               position: fixed;
-              top: -10em;
+              top: 0;
               left: 0;
               background: rgba(0, 0, 0, 0.5);
-              z-index: 1;
+              z-index: 2;
             }
           `}
         </style>

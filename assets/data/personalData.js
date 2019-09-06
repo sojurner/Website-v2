@@ -116,6 +116,40 @@ export const experienceInfo = [
 
 export const projects = [
   {
+    title: 'Event-mapper',
+    projectType: 'React',
+    technologies: ['react', 'redux', 'jest', 'router'],
+    img_url:
+      'https://res.cloudinary.com/paulkim/image/upload/v1552394727/images/projects/Event-mapper.png',
+    description:
+      'Find the most popular events near your area.  Search by city and/or date and add an event to your watchlist',
+    githubURL: 'https://github.com/sojurner/Event-Mapper',
+    githubPages: 'https://event-mapper.netlify.com'
+  },
+
+  {
+    title: 'Movie-tracker',
+    projectType: 'React',
+    technologies: ['react', 'redux', 'jest', 'router'],
+    img_url:
+      'https://res.cloudinary.com/paulkim/image/upload/v1552393880/images/projects/Movie-tracker.png',
+    description:
+      'Track most recent movies and view their trailers. Sign-up and select favorites to keep track of upcoming movies',
+    githubURL: 'https://github.com/sojurner/Movie-Tracker',
+    githubPages: 'https://movie-tracker-client.herokuapp.com/'
+  },
+  {
+    title: 'Fantasy-futbol',
+    projectType: 'React',
+    technologies: ['react', 'redux', 'jest', 'router', 'node'],
+    img_url:
+      'https://res.cloudinary.com/paulkim/image/upload/v1552393876/images/projects/Fantasy-futbol.png',
+    description:
+      'Create your own league, add users, and create soccer team with Fantasy-futbol.  Users can search by country, player name, and/or club and view player stats.',
+    githubURL: 'https://github.com/sojurner/fantasy-futbol_client',
+    githubPages: 'https://fantasy-futbol.netlify.com'
+  },
+  {
     title: 'Minecraft',
     projectType: 'Compositions',
     technologies: ['html', 'css'],
@@ -149,39 +183,7 @@ export const projects = [
     githubURL: 'https://github.com/sojurner/Static-Comp-3',
     githubPages: 'https://sojurner.github.io/Static-Comp-3/'
   },
-  {
-    title: 'Fantasy-futbol',
-    projectType: 'React',
-    technologies: ['react', 'redux', 'jest', 'router', 'node'],
-    img_url:
-      'https://res.cloudinary.com/paulkim/image/upload/v1552393876/images/projects/Fantasy-futbol.png',
-    description:
-      'Create your own league, add users, and create soccer team with Fantasy-futbol.  Users can search by country, player name, and/or club and view player stats.',
-    githubURL: 'https://github.com/sojurner/fantasy-futbol_client',
-    githubPages: 'https://fantasy-futbol.netlify.com'
-  },
-  {
-    title: 'Event-mapper',
-    projectType: 'React',
-    technologies: ['react', 'redux', 'jest', 'router'],
-    img_url:
-      'https://res.cloudinary.com/paulkim/image/upload/v1552394727/images/projects/event-mapper.png',
-    description:
-      'Find the most popular events near your area.  Search by city and/or date and add an event to your watchlist',
-    githubURL: 'https://github.com/sojurner/Event-Mapper',
-    githubPages: 'https://event-mapper.netlify.com'
-  },
-  {
-    title: 'Movie-tracker',
-    projectType: 'React',
-    technologies: ['react', 'redux', 'jest', 'router'],
-    img_url:
-      'https://res.cloudinary.com/paulkim/image/upload/v1552393880/images/projects/Movie-tracker.png',
-    description:
-      'Track most recent movies and view their trailers. Sign-up and select favorites to keep track of upcoming movies',
-    githubURL: 'https://github.com/sojurner/Movie-Tracker',
-    githubPages: 'https://movie-tracker-client.herokuapp.com/'
-  },
+
   {
     title: 'Swavi-box',
     projectType: 'Vue',

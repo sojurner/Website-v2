@@ -53,6 +53,15 @@ const ScrollTo = ({ indicator, iconName, color, style, ...props }) => {
           cursor: pointer;
           margin: auto;
         }
+
+        .projects__landingHeader-scrollTo {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 80px;
+          cursor: pointer;
+        }
       `}</style>
     </>
   );

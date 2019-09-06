@@ -4,11 +4,11 @@ import SkillSet from '../molecules/SkillSet';
 import Contact from '../compounds/Contact';
 import BucketList from '../compounds/BucketList';
 import Toggle from '../molecules/Toggle';
+import RandomQuote from '../atoms/RandomQuote';
 
 import { ContactRedirect, Switch } from '../../utils/hooks';
 import { bucketList, skills } from '../../assets/data/personalData';
 import '../../styles/layouts/_about.scss';
-import RandomQuote from '../atoms/RandomQuote';
 
 const aboutClass = 'about';
 

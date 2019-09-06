@@ -3,13 +3,13 @@
 
 .root__header,
 .projects__header {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   max-height: 50px;
   min-height: 50px;
   display: flex;
   z-index: 1;
-  background: #e0ebe8;
 
   &__logoName {
     display: flex;

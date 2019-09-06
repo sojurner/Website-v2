@@ -2,6 +2,7 @@
   &__title-techstack {
     display: flex;
     align-items: center;
+
     &_2 {
       display: flex;
       flex-direction: row;
@@ -15,8 +16,12 @@
     }
     h2 {
       font-size: 50px;
-      margin: 25px 0;
+      margin: 0 0 25px 0;
     }
+  }
+
+  &__projectImg {
+    height: 400px;
   }
 
   &__description-redirects {
@@ -24,10 +29,9 @@
     justify-content: center;
     align-items: center;
     margin: 40px 0;
-
+    max-width: 600px;
     p {
       font-size: 25px;
-      max-width: 500px;
       color: rgb(13, 58, 109);
     }
 

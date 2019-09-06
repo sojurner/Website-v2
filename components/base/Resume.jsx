@@ -21,7 +21,6 @@ const Resume = () => {
       setOpaque(false);
     }, 100);
   }, []);
-  console.log(refs);
   return (
     <div
       ref={refs[0]}

@@ -5,8 +5,7 @@ $root-page-palette: map-get($root-background, $header)
   map-get($root-background, $main) map-get($root-background, $footer);
 
 .root {
-  overflow-x: hidden;
-
+  margin: 50px 0 0 0;
   @include create-grid($root-area-template, $root-column-template, $default);
   @include apply-placement($root-page-palette, $root-placements, $default);
 }

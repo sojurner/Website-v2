@@ -63,6 +63,7 @@ export const TextSwap = ({ children }) => {
 };
 
 export const useMainRefs = refCount => {
+  const [selectedProject, setSelectedProject] = useState(null);
   const [refs, setRefs] = useState(
     Array.from({ length: refCount }).map((u, i) => useRef())
   );
@@ -71,5 +72,9 @@ export const useMainRefs = refCount => {
     refs[index].current.scrollIntoView({ block: 'start', behavior: 'smooth' });
   };
 
-  return [refs, scrollToRef];
+  const handleSelect = projectName => {
+    setSelectedProject(projectName);
+  };
+
+  return [refs, scrollToRef, selectedProject, handleSelect];
 };
