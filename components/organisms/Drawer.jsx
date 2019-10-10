@@ -42,7 +42,7 @@ const Drawer = ({ open, handleToggle }) => {
               display: flex;
               flex-flow: column nowrap;
               flex: 0 0 1;
-              background: #efefef;
+              background: #f5fff4;
               position: fixed;
               top: 0;
               left: 0;

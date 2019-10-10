@@ -18,7 +18,7 @@ const Footer = ({ scrollToRef, ...props }) => {
               {({ openTab }) => <Contact openTab={openTab} direction="row" />}
             </ContactRedirect>
           </div>
-          <div>
+          <div className={'quote'}>
             <RandomQuote className={'quote'} />
           </div>
           <div>
@@ -27,8 +27,8 @@ const Footer = ({ scrollToRef, ...props }) => {
               src={
                 'https://res.cloudinary.com/paulkim/image/upload/v1552394091/images/misc/Paul-kim-logo.png'
               }
-              height={35}
-              width={150}
+              height={25}
+              width={130}
             />
           </div>
 
@@ -62,6 +62,10 @@ const Footer = ({ scrollToRef, ...props }) => {
           background-color: #c9e9e0;
 
           background-position: bottom;
+        }
+
+        .quote {
+          width: 235px;
         }
 
         .footer__sections {

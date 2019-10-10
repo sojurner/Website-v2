@@ -44,18 +44,21 @@ const MainDescription = ({ scrollToRef, ...props }, ref) => {
         </div>
         <div className={`${props.className}__${aboutMe}__${message}`}>
           <div className={`${props.className}__${aboutMe}__${message}-intro`}>
-            <img
+            <figure
               style={{
                 position: 'sticky',
                 top: '30%',
-                transform: 'translate(160%, 0px)'
+                transform: 'translate(135%, 0px)'
                 // transform: 'translate(160%, 50%)'
               }}
-              src={
-                'https://res.cloudinary.com/paulkim/image/upload/v1552393702/images/professional/army_photo.jpg'
-              }
-            />
-
+            >
+              <img
+                src={
+                  'https://res.cloudinary.com/paulkim/image/upload/v1552393702/images/professional/army_photo.jpg'
+                }
+              />
+              <span />
+            </figure>
             <div className={`${props.className}__${aboutMe}__${message}-text`}>
               <p>
                 After serving Four Years in the{' '}
@@ -76,17 +79,20 @@ const MainDescription = ({ scrollToRef, ...props }, ref) => {
             </div>
           </div>
           <div className={`${props.className}__${aboutMe}__${message}-closing`}>
-            <img
+            <figure
               style={{
                 position: 'sticky',
                 top: '30%',
-                transform: 'translate(0, 0px)'
+                transform: 'translate(-10%, 0px)'
               }}
-              src={
-                'https://res.cloudinary.com/paulkim/image/upload/v1552394092/images/misc/family-cropped.jpg'
-              }
-            />
-
+            >
+              <img
+                src={
+                  'https://res.cloudinary.com/paulkim/image/upload/v1552394092/images/misc/family-cropped.jpg'
+                }
+              />
+              <span />
+            </figure>
             <div className={`${props.className}__${aboutMe}__${message}-text2`}>
               <p>
                 Their breadth of knowledge and altruism has inspired me to
