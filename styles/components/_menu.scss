@@ -6,8 +6,8 @@
   padding: 0;
 
   &__link {
-    width: 100%;
-    border-left: 4px solid rgba(0, 0, 0, 0);
+    width: 99%;
+    border-right: 4px solid rgba(0, 0, 0, 0);
     cursor: pointer;
 
     &:hover {
@@ -16,7 +16,7 @@
 
     &-active {
       @extend .drawer__menu__link;
-      border-left: 4px solid rgb(85, 156, 123);
+      border-right: 4px solid rgb(85, 156, 123);
     }
 
     a {
