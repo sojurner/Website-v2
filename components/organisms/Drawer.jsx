@@ -1,8 +1,11 @@
 import { createPortal } from 'react-dom';
+
 import Menu from '../compounds/Menu';
-import { PortalNode } from '../../utils/hooks';
-import Typography from '../atoms/Typography';
+import Contact from '../compounds/Contact';
 import Icon from '../atoms/Icon';
+
+import { ContactRedirect } from '../../utils/hooks';
+import { PortalNode } from '../../utils/hooks';
 
 const drawerClass = 'drawer';
 const menuClass = `${drawerClass}__menu`;
@@ -28,12 +31,19 @@ const Drawer = ({ open, handleToggle }) => {
               cursor: 'pointer'
             }}
           />
-          <Typography
-            className={`${drawerClass}__title`}
-            variant={'h1'}
-            children={'Menu'}
-          />
+
           <Menu className={menuClass} />
+          <ContactRedirect>
+            {({ openTab }) => (
+              <Contact
+                style={{
+                  margin: 'auto auto 15px auto'
+                }}
+                openTab={openTab}
+                direction="row"
+              />
+            )}
+          </ContactRedirect>
         </div>
         {open && <div className={`${drawerClass}__backdrop`} />}
         <style jsx>
@@ -42,12 +52,12 @@ const Drawer = ({ open, handleToggle }) => {
               display: flex;
               flex-flow: column nowrap;
               flex: 0 0 1;
-              background: #f5fff4;
+              background: white;
               position: fixed;
               top: 0;
               left: 0;
               height: -webkit-fill-available;
-              width: 15em;
+              width: 14em;
               border-right: 1px solid #ededed;
               box-shadow: 0 0 6px 3px #00000038;
               transition: 0.2s linear;

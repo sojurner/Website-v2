@@ -2,9 +2,10 @@ import Router from 'next/router';
 import { Formik, Field } from 'formik';
 import * as Yup from 'yup';
 
-import '../../styles/components/_emailForm.scss';
-
 import Error from '../atoms/Error';
+import Icon from '../atoms/Icon';
+
+import '../../styles/components/_emailForm.scss';
 
 const redirectTo = path => Router.push(path);
 
@@ -22,13 +23,10 @@ const validationSchema = Yup.object().shape({
 const EmailForm = () => {
   return (
     <div className={'footer__contactMe'}>
-      <h2>Send Me a Message</h2>
+      <h2>Contact Me!</h2>
       <Formik
         initialValues={{ email: '', name: '', message: '' }}
         validationSchema={validationSchema}
-        // onSubmit={(values, actions) => {
-
-        // }}
       >
         {({
           values,
@@ -49,7 +47,7 @@ const EmailForm = () => {
               }, 1000);
             }}
             className={'contactMe__form'}
-            enctype="text/plain"
+            encType="text/plain"
           >
             <div>
               <label htmlFor="name">Name:</label>
@@ -117,7 +115,7 @@ const EmailForm = () => {
               }
               type="submit"
             >
-              Send
+              <Icon color="gray" size={1} iconName="Send" />
             </button>
           </form>
         )}

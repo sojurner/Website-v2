@@ -20,7 +20,11 @@ const Main_Timeline = (props, ref) => {
         }) => {
           return (
             <>
-              <section>
+              <section
+                style={{
+                  borderBottom: '0.5px solid rgba(0, 0, 0, 0.158)'
+                }}
+              >
                 <Carousel
                   style={{ height: '100%' }}
                   axis={'y'}

@@ -39,7 +39,7 @@
 
     .has-error {
       @extend .contactMe__name;
-      box-shadow: 0 0 5px 1px #e06969 !important;
+      border-color: #e06969;
     }
 
     .has-error-msg {
@@ -56,11 +56,15 @@
     textarea {
       background: rgb(179, 231, 229);
       width: 250px;
-      border: 0.1px solid rgb(82, 210, 219);
+      border: 1px solid rgb(82, 210, 219);
       padding: 10px;
       &:focus {
+        box-shadow: 0 0 20px 1px rgb(84, 184, 202);
         outline: none;
-        box-shadow: 0 0 5px 0 rgb(50, 86, 151);
+      }
+
+      &::placeholder {
+        color: rgb(158, 158, 158);
       }
     }
 
@@ -84,16 +88,29 @@
       width: max-content;
       font-size: 15px;
       border-radius: 10px;
-      background: #b3e7e5;
-      padding: 0.5em 1em;
+      border: 0;
+      padding: 0.4em 0.5em 0.3em 0.5em;
       align-self: center;
       margin-bottom: 20px;
       cursor: pointer;
-      border: 0.5px solid rgb(82, 210, 219);
+      justify-content: space-between;
+      font-size: 1.1em;
+      background: none;
 
       &:disabled {
+        pointer-events: none;
         cursor: initial;
-        background: #9abfc5;
+        background: none;
+
+        svg {
+          path {
+            fill: rgb(163, 163, 163) !important;
+          }
+        }
+      }
+
+      &:hover {
+        background: rgb(179, 231, 229);
       }
     }
   }

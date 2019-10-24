@@ -6,6 +6,7 @@
   width: 100vw;
   position: relative;
   background: linear-gradient(0deg, #c9e9e0 0%, #77c8b9 100%);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.158);
   display: grid;
   grid-template-areas:
     'content content content content content navigation'

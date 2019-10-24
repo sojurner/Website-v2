@@ -37,7 +37,7 @@ const Main_Landing = ({ scrollToRef, ...props }, ref) => {
             textShadow: '0px 0px 10px black'
           }}
           onClick={() => scrollToRef(1)}
-          indicator={'Scroll Down'}
+          indicator={'See More'}
           className={'main__landing'}
         />
         <MainLandingBackground />

@@ -50,7 +50,8 @@ import {
   mdiChevronDown,
   mdiLaptopMac,
   mdiBaseballBat,
-  mdiHiking
+  mdiHiking,
+  mdiSend
 } from '@mdi/js';
 
 const iconsList = {
@@ -104,7 +105,8 @@ const iconsList = {
   Up: mdiChevronUp,
   VSCode: mdiVisualStudioCode,
   Web: mdiLaptopMac,
-  Work: mdiBriefcaseOutline
+  Work: mdiBriefcaseOutline,
+  Send: mdiSend
 };
 
 export default iconsList;

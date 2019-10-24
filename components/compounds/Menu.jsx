@@ -5,6 +5,8 @@ import { withRouter } from 'next/router';
 import '../../styles/components/_menu.scss';
 
 const listItemStyle = { display: 'flex' };
+const size = 0.75;
+const variant = 'p';
 
 const LinkFactory = ({ iconProps, typographyProps, ...props }) => {
   return (
@@ -20,8 +22,8 @@ const menuList = [
     href: '/',
     children: (
       <LinkFactory
-        iconProps={{ iconName: 'Home', size: 0.75 }}
-        typographyProps={{ variant: 'p', children: 'Home' }}
+        iconProps={{ iconName: 'Home', size }}
+        typographyProps={{ variant, children: 'Home' }}
         props={{ style: listItemStyle }}
       />
     )
@@ -30,8 +32,8 @@ const menuList = [
     href: '/about',
     children: (
       <LinkFactory
-        iconProps={{ iconName: 'Greeting', size: 0.75 }}
-        typographyProps={{ variant: 'p', children: 'About Me' }}
+        iconProps={{ iconName: 'Greeting', size }}
+        typographyProps={{ variant, children: 'About Me' }}
         props={{ style: listItemStyle }}
       />
     )
@@ -40,8 +42,8 @@ const menuList = [
     href: '/projects',
     children: (
       <LinkFactory
-        iconProps={{ iconName: 'Projects', size: 0.75 }}
-        typographyProps={{ variant: 'p', children: 'My Work' }}
+        iconProps={{ iconName: 'Projects', size }}
+        typographyProps={{ variant, children: 'My Work' }}
         props={{ style: listItemStyle }}
       />
     )
@@ -50,8 +52,8 @@ const menuList = [
     href: '/resume',
     children: (
       <LinkFactory
-        iconProps={{ iconName: 'Resume', size: 0.75 }}
-        typographyProps={{ variant: 'p', children: 'Resume' }}
+        iconProps={{ iconName: 'Resume', size }}
+        typographyProps={{ variant, children: 'Resume' }}
         props={{ style: listItemStyle }}
       />
     )
@@ -61,11 +63,19 @@ const menuList = [
 const Menu = ({ router, ...props }) => {
   return (
     <ul {...props}>
-      {menuList.map(itemProps => {
+      {menuList.map((itemProps, index) => {
         return router.pathname !== itemProps.href ? (
-          <MenuItem className={`${props.className}__link `} {...itemProps} />
+          <MenuItem
+            key={`menuitem-${index}`}
+            className={`${props.className}__link `}
+            {...itemProps}
+          />
         ) : (
-          <li className={`${props.className}__link-active`} {...itemProps} />
+          <li
+            key={`menuitem-${index}`}
+            className={`${props.className}__link-active`}
+            {...itemProps}
+          />
         );
       })}
     </ul>
