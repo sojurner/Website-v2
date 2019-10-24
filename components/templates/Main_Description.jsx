@@ -23,7 +23,7 @@ const MainDescription = ({ scrollToRef, ...props }, ref) => {
       {/* {console.log({ introVisible, outroVisible }) || null} */}
       <div className={`${props.className}__${aboutMe}`}>
         <div className={`${props.className}__${aboutMe}__${skillsets}`}>
-          <h1 style={{ padding: '50px 0 0 0' }}>A Little Bit About Me!</h1>
+          <h1 style={{ padding: '50px 0 0 0' }}>HOLA !</h1>
           <p>I'm a Front end Developer of 2 years located in Denver, CO.</p>
           <div
             className={`${props.className}__${aboutMe}__${skillsets}-current`}
@@ -44,6 +44,7 @@ const MainDescription = ({ scrollToRef, ...props }, ref) => {
         </div>
         <div className={`${props.className}__${aboutMe}__${message}`}>
           <div className={`${props.className}__${aboutMe}__${message}-intro`}>
+            <h1>A Little Bit About Me...</h1>
             <figure
               style={{
                 position: 'sticky',
@@ -61,20 +62,14 @@ const MainDescription = ({ scrollToRef, ...props }, ref) => {
             </figure>
             <div className={`${props.className}__${aboutMe}__${message}-text`}>
               <p>
-                After serving Four Years in the{' '}
+                Initially, Served Four Years in the{' '}
                 <strong>United States Army</strong> as a Medic...
               </p>
             </div>
             <div className={`${props.className}__${aboutMe}__${message}-text`}>
               <p>
-                I began my ambitious journey into the World software
-                development.
-              </p>
-            </div>
-            <div className={`${props.className}__${aboutMe}__${message}-text`}>
-              <p>
-                And Since I've Began, I've been <strong> awe-struck </strong> by
-                the incredible feats achieved by the dev community.
+                Began My Journey into <strong>Software Development</strong> in
+                late 2017
               </p>
             </div>
           </div>
@@ -95,13 +90,9 @@ const MainDescription = ({ scrollToRef, ...props }, ref) => {
             </figure>
             <div className={`${props.className}__${aboutMe}__${message}-text2`}>
               <p>
-                Their breadth of knowledge and altruism has inspired me to
-                strive for similar greatness.
+                It has thus far been an <strong>Incredible</strong> and{' '}
+                <strong>Enlightening </strong> experience
               </p>
-            </div>
-
-            <div className={`${props.className}__${aboutMe}__${message}-text2`}>
-              <p>It has thus far been a humbling and enlightening experience</p>
             </div>
             <div className={`${props.className}__${aboutMe}__${message}-text2`}>
               <p>

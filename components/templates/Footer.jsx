@@ -1,5 +1,4 @@
 import Icon from '../atoms/Icon';
-import ScrollTo from '../molecules/ScrollTo';
 import RandomQuote from '../atoms/RandomQuote';
 import EmailForm from '../compounds/EmailForm';
 import Contact from '../compounds/Contact';
@@ -18,31 +17,19 @@ const Footer = ({ scrollToRef, ...props }) => {
               {({ openTab }) => <Contact openTab={openTab} direction="row" />}
             </ContactRedirect>
           </div>
-          <div className={'quote'}>
-            <RandomQuote className={'quote'} />
-          </div>
           <div>
-            <Icon iconName={'Copyright'} size={1.2} color={'gray'} />
+            <Icon iconName={'Copyright'} size={1} color={'gray'} />
             <img
               src={
                 'https://res.cloudinary.com/paulkim/image/upload/v1552394091/images/misc/Paul-kim-logo.png'
               }
               height={25}
-              width={130}
+              width={115}
             />
           </div>
-
-          {/* <ScrollTo
-            onClick={() => scrollToRef(0)}
-            style={{
-              color: '#142d5a',
-              fontSize: 25
-            }}
-            color="grey"
-            iconName={'Up'}
-            indicator={'Back Top'}
-            className={'footer'}
-          /> */}
+          <div className={'quote'}>
+            <RandomQuote className={'quote'} />
+          </div>
         </div>
         <EmailForm />
       </footer>
@@ -60,8 +47,11 @@ const Footer = ({ scrollToRef, ...props }) => {
           background-repeat: no-repeat;
           background-blend-mode: overlay;
           background-color: #c9e9e0;
-
           background-position: bottom;
+        }
+
+        .root__footer {
+          margin: 0;
         }
 
         .quote {

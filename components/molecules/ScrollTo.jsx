@@ -15,7 +15,7 @@ const ScrollTo = ({ indicator, iconName, color, style, ...props }) => {
       <style jsx>{`
         .main__landing {
           position: absolute;
-          bottom: 50px;
+          bottom: 90px;
           left: 50%;
           z-index: 1;
           width: max-content;

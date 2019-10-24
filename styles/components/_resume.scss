@@ -1,11 +1,10 @@
 .chart-container-show {
-  height: 100vh;
+  height: max-content;
   text-align: center;
   position: relative;
   opacity: 1;
-  overflow-y: scroll;
   transition: 0.5s linear;
-  background: #e0ebe8;
+  background: #c9e9e0;
   padding: 1em;
 }
 
